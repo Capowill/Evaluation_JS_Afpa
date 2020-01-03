@@ -1,0 +1,220 @@
+
+ 
+
+#col /* la colonne qui me fait galeré */
+{
+    
+    height: auto;
+    width: 400px;
+    background-color: rgb(134, 126, 126);   
+    
+} /* FIN : : la colonne qui me fait galeré */
+
+
+
+
+@media screen and (max-width: 768px) /* media query ! ON SAIS PAS TROP SI CA MARCHE */
+{
+    
+html
+{
+    font-size: 100%;
+}
+
+ul
+{
+    background-color: black; 
+    border: 0px; 
+    display: flex;
+    justify-content: right;
+    height: 50px;  
+}
+/* header - footer */
+a
+{
+    color: blanchedalmond;
+}
+
+li
+{
+    margin: 2px;
+    margin-top: center;
+    
+}
+ /* header - footer */ 
+.img1
+{
+    width: 350px; /* largeur dimension */
+    height: auto; /* hauteur dimension */
+}
+
+
+.droite
+{
+    float: right;
+    margin-top: 5rem;
+    margin-right: 550px;
+    font-size: xx-large;
+
+}
+
+
+ /* body index.html */ 
+
+#contener
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#col /* Encore la colonne qui fait galeré */ 
+{
+    
+    height: auto;
+    width: 400px;
+    border: 1px solid;
+    float: right;
+    background-color: red;
+    display: none;
+    
+}  /* FIN  : : Encore la colonne qui fait galeré  */
+
+#promo
+{
+    width: 100%;
+    height: auto;
+}
+  
+/* tableau */
+
+table,
+tr,
+td,
+th
+{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 40px;
+    text-align: left;
+}
+
+/* CONTACT */
+
+form
+{
+   margin: 0 left;
+   width: 400px;
+   padding: 1em;
+   border: 1px solid #CCC;
+}
+
+input 
+{
+    font: 1px sans-serif;
+}
+
+} /* Balise fermeture du @media screen and (max-width: 768px)  */ 
+
+@media screen and (min-width: 992px) /* media query ! ON SAIS PAS TROP SI CA MARCHE */
+{
+    
+html
+{
+    font-size: 100%;
+}
+
+ul
+{
+    background-color: black; 
+    border: 0px; 
+    display: flex;
+    justify-content: right;
+    height: 50px;  
+}
+/* header - footer */
+a
+{
+    color: blanchedalmond;
+}
+
+li
+{
+    margin: 2px;
+    margin-top: center;
+    
+}
+ /* header - footer */ 
+.img1
+{
+    width: 350px; /* largeur dimension */
+    height: auto; /* hauteur dimension */
+}
+
+
+.droite
+{
+    float: right;
+    margin-top: 5rem;
+    margin-right: 550px;
+    font-size: xx-large;
+
+}
+
+
+ /* body index.html */ 
+
+#contener
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+#col /* Encore la colonne qui fait galeré */ 
+{
+    
+    height: auto;
+    width: 400px;
+    border: 1px solid;
+    float: right;
+    background-color: red;
+    
+    
+} /* FIN  : : Encore la colonne qui fait galeré  */
+
+#promo
+{
+    width: 100%;
+    height: auto;
+}
+  
+/* tableau */
+
+table,
+tr,
+td,
+th
+{
+    border: 1px solid #000000;
+    border-collapse: collapse;
+    padding: 40px;
+    text-align: left;
+}
+
+/* CONTACT */
+
+form
+{
+   margin: 0 left;
+   width: 400px;
+   padding: 1em;
+   border: 1px solid #CCC;
+}
+
+input 
+{
+    font: 1px sans-serif;
+}
+
+} /* Balise fermeture du @media screen and (min-width: 992px)  */ 

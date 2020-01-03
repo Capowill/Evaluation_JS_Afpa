@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="assets/style.css">
+
+</head>
+
+<body class="container-fluid p-0">
+    <header>
+        <div>
+            <img class="img1" src="assets/images/jarditou_logo.jpg" width="600" height="250" alt="Logo Jarditou"
+                title="Logo Jarditou" />
+
+            <p class="droite">Tout le jardin</p>
+        </div>
+        <p>La qualité depuis 70 ans</p>
+    </header>
+
+    <ul>
+        <li>
+            <a href="index.html">Acceuil</a>
+        </li>
+        <li>
+            <a href="Tableau.html">Tableau</a>
+        </li>
+        <li>
+            <a href="contact.html">Contact</a>
+        </li>
+    </ul>
+
+    <img id="promo" src="assets/images/promotion.jpg" alt="promotion" title="promotion" />
+    <div>
+        <h1>Contact</h1>
+        <h5>Ces champs sont obligatoires *</h5>
+    </div>
+
+    <fieldset class="m-5">
+        <form>
+
+
+            <div class="row">
+                <label class="col-2">Votre nom :</label><input type="text" class="col-2" id="nom" required>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+                <label class="col-2">Votre prénom :</label><input type="text" class="col-2" id="prenom" name="prenom"
+                    required>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+                <label class="col-2"> Sexe :</label>
+                <div class="col-2">
+                    <input type="radio" name="sex" value="Féminin" required> Féminin
+                    <input type="radio" name="sex" value="Masculin" required> Masculin
+                </div>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+                <label class="col-2"> Date de naissance :</label><input type="text" class="col-2" id="naissance"
+                    name="Date de naissance" required>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+                <label class="col-2"> Code postal :</label><input type="text" class="col-2" id="code"
+                    name="Code postale" placeholder="80100" required>
+            </div>
+            <div class="row">
+                <label class="col-2"> Adresse :</label></label><input type="text" class="col-2" id="adresse"
+                    name="Adresse">
+            </div>
+            <div class="row">
+                <label class="col-2">Ville :</label></label><input type="text" class="col-2" id="ville" name="Ville">
+            </div>
+            <div class="row">
+                <label class="col-2">E-mail :</label><input type="text" class="col-2" id="email" name="mail"
+                    placeholder="exemple@mail.fr" required>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+
+                <label class="col-2"> Sujet :</label>
+
+                <select class="col-2" name="Sujet" size="1">
+                    <option value="Mes commandes">Mes commandes</option>
+                    <option value="Question sur un produit">Question sur un produit</option>
+                    <option value="Reclamation">Reclamation</option>
+                    <option value="Autres">Autres</option>
+                </select>
+                <p class="col-2">*</p>
+            </div>
+            <div class="row">
+                <label class="col-2">Votre question :</label>
+                <textarea name="commentaire" rows="7" cols="40"></textarea>
+            </div>
+
+            <div class="row">
+                <input type="checkbox" name="Confirmation" value="Confirmation" required>J'accepte le traitement
+                informatique de ce formulaire.
+            </div>
+
+            <div class="row">
+                <button class="btn btn-primary" type="submit" value="Envoyer" id="submit">Envoyer</button>
+                <button class="btn btn-primary" type="reset" value="Annuler">Annuler</button>
+            </div>
+
+        </form>
+    </fieldset>
+
+
+
+
+
+    <footer>
+        <ul>
+            <li>
+                <a href="">Mentions légales</a>
+            </li>
+            <li>
+                <a href="">Horaires</a>
+            </li>
+            <li>
+                <a href="">Plan du site</a>
+            </li>
+
+        </ul>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"></script>
+    <script src="assets/fichier.js"></script>
+</body>
+
+</html>

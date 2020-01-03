@@ -1,0 +1,59 @@
+/* IMAGE DU HAUT */
+.img1 {
+    width: 350px;
+    /* largeur dimension */
+    height: auto;
+    /* hauteur dimension */
+}
+
+#promo {
+    width: 100%;
+}
+
+
+
+/*  UL haut et bas de la page*/
+ul {
+    background-color: black;
+    /* couleur du fond */
+    border: 0px;
+    display: flex;
+    justify-content: right;
+    height: 50px;
+
+}
+
+li {
+    background-color: black;
+    margin: 2px;
+    margin-top: center;
+}
+a
+{
+    color: blanchedalmond;
+}
+
+
+/*  la phrase : Tout le jardin */
+.droite {
+
+    display: flex;
+    float: right;
+    margin-right: 350px;
+    margin-top: 50px;
+    font-size:  xx-large;
+}
+
+
+
+/* CSS du formulaire */ 
+
+h5
+{
+    color: red;
+}
+
+p
+{
+ color: red;
+}

@@ -1,0 +1,96 @@
+/* CSS */
+
+
+  
+ul
+{
+    background-color: black; /* couleur du fond */
+    border: 0px; 
+    display: flex;
+    justify-content: right;
+    height: 50px;
+    
+}
+
+a
+{
+    color: blanchedalmond;
+}
+
+
+li
+{
+    background-color: black;
+    margin: 2px;
+    margin-top: center;
+}
+
+.img1
+{
+    width: 350px; /* largeur dimension */
+    height: auto; /* hauteur dimension */
+}
+
+
+.droite
+{
+    display: flex;
+    margin-top: 80px;
+    margin-right: 550px;
+    font-size: xx-large;
+
+}
+
+
+
+form
+{
+   margin: 0 left;
+   width: 400px;
+   padding: 1em;
+   border: 1px solid #CCC;
+   border-radius: 1em;
+}
+
+
+  
+
+
+ /* body index.html */ 
+
+#contener
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+
+.col
+{
+    
+    height: auto;
+    width: 400px;
+    border: 1px solid;
+    float: right;
+    background-color: rgb(161, 154, 154); 
+} 
+
+#promo
+{
+    width: 100%;
+}
+
+
+/* tableau.html */
+
+
+/* BOOTSTRAP */
+
+/* Vues adaptatives :
+
+ -> Chrome : F12, Ctrl + Shift + M
+ -> Firefox : Ctrl + Shift + M 
+
+*/
+
+

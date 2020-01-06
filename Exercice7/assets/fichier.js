@@ -22,7 +22,7 @@ function testcode() {
     var code = document.getElementById("code").value;
     var result = filtre.test(code);
     if (!result) {
-        alert("Code postal incorrect ! saisir Exemple : 80100")
+        alert("Code postal incorrect ! saisir Exemple : 80100");
     } else {
         console.log(code);
     }
@@ -34,10 +34,9 @@ function testnom() {
     var filtre = /[a-zA-Z]$/;
     var nom = document.getElementById("nom").value;
     var result = filtre.test(nom);
-    if(!result){
+    if (!result) {
         alert("Nom  non valide !");
-    }
-    else{
+    } else {
         console.log(nom);
     }
 
@@ -49,10 +48,9 @@ function testprenom() {
     var filtre = /[a-zA-Z]$/;
     var nom = document.getElementById("prenom").value;
     var result = filtre.test(nom);
-    if(!result){
+    if (!result) {
         alert(" Prenom non valide !");
-    }
-    else{
+    } else {
         console.log(nom);
     }
 
@@ -60,16 +58,15 @@ function testprenom() {
 
 /* DATE DE NAISSANCE */
 
-function testnaissance(){
+function testnaissance() {
     var filtre = /[0-9]{2}\/[0-9]{2}\/[0-9]{4}/; // resultat 00/00/0000
     var naissance = document.getElementById("naissance").value;
     var result = filtre.test(naissance);
-    if(!result){
+    if (!result) {
         alert("Date de naissance inconnu");
+    } else {
+        console.log(naissance);
     }
-     else{
-         console.log(naissance);
-     }   
 }
 
 

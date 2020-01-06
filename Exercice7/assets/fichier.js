@@ -28,7 +28,40 @@ function testcode() {
     }
 }
 
+/* NOM PRENOM */
+
+function testnom() {
+    var filtre = /[a-zA-Z]+/;
+    var nom = document.getElementById("nom");
+    var result = filtre.teste(nom);
+    if(!result){
+        alert("Nom ou prenom non valide !");
+    }
+    else{
+        console.log(nom);
+    }
+
+}
+
+/* DATE DE NAISSANCE */
+
+function testnaissance(){
+    var filtre = /[0-9]{1,2}\/[0-9]{1,2}\/[0-9]{4}/;
+    var naissance = document.getElementById("naissance");
+    var result = filtre.test(naissance);
+    if(!resultl){
+        alert("Date de naissance inconnu");
+    }
+     else{
+         console.log(naissance);
+     }   
+}
 
 
+
+
+
+document.getElementById("submit").addEventListener("click", testnaissance);
+document.getElementById("submit").addEventListener("click", testnom);
 document.getElementById("submit").addEventListener("click", testmail);
 document.getElementById("submit").addEventListener("click", testcode);

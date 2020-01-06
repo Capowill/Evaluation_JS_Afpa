@@ -28,14 +28,29 @@ function testcode() {
     }
 }
 
-/* NOM PRENOM */
+/* NOM */
 
 function testnom() {
     var filtre = /[a-zA-Z]$/;
     var nom = document.getElementById("nom").value;
     var result = filtre.test(nom);
     if(!result){
-        alert("Nom ou prenom non valide !");
+        alert("Nom  non valide !");
+    }
+    else{
+        console.log(nom);
+    }
+
+}
+
+/*  PRENOM */
+
+function testprenom() {
+    var filtre = /[a-zA-Z]$/;
+    var nom = document.getElementById("prenom").value;
+    var result = filtre.test(nom);
+    if(!result){
+        alert(" Prenom non valide !");
     }
     else{
         console.log(nom);
@@ -46,7 +61,7 @@ function testnom() {
 /* DATE DE NAISSANCE */
 
 function testnaissance(){
-    var filtre = /[0-9]{2}\/[0-9]{2}\/[0-9]{4}/;
+    var filtre = /[0-9]{2}\/[0-9]{2}\/[0-9]{4}/; // resultat 00/00/0000
     var naissance = document.getElementById("naissance").value;
     var result = filtre.test(naissance);
     if(!result){
@@ -60,8 +75,8 @@ function testnaissance(){
 
 
 
-
-document.getElementById("submit").addEventListener("click", testnaissance);
 document.getElementById("submit").addEventListener("click", testnom);
-document.getElementById("submit").addEventListener("click", testmail);
+document.getElementById("submit").addEventListener("click", testprenom);
+document.getElementById("submit").addEventListener("click", testnaissance);
 document.getElementById("submit").addEventListener("click", testcode);
+document.getElementById("submit").addEventListener("click", testmail);

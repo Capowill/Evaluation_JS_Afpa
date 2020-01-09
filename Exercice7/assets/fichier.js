@@ -31,7 +31,7 @@ function testcode() {
 
 /* NOM */
 function testnom() {
-    let filtre = /[a-zA-Z\é\è\-\ï]$/;
+    let filtre = /[a-zA-Z\é\è\-\ï\ë\î]$/;
     let nom = document.getElementById("nom").value;
     let result = filtre.test(nom);
     if (!result) {
@@ -44,7 +44,7 @@ function testnom() {
 
 /*  PRENOM */
 function testprenom() {
-    let filtre = /[a-zA-Z\é\è\-\ï]$/;
+    let filtre = /[a-zA-Z\é\è\-\ï\ë\î]$/;
     let prenom = document.getElementById("prenom").value;
     let result = filtre.test(prenom);
     if (!result) {

@@ -17,9 +17,9 @@
             <img class="img1" src="assets/images/jarditou_logo.jpg" width="600" height="250" alt="Logo Jarditou"
                 title="Logo Jarditou" />
 
-            <p class="droite">Tout le jardin</p>
+            <h1 class="droite">Tout le jardin</h1>
         </div>
-        <p>La qualité depuis 70 ans</p>
+        <h6>La qualité depuis 70 ans</h6>
     </header>
 
     <ul>
@@ -40,12 +40,10 @@
         <h5>Ces champs sont obligatoires *</h5>
     </div>
 
-    <fieldset class="m-5">
-        <form>
-
-
+    <form target="_blank" action="http://bienvu.net/script.php" method="GET">
+        <fieldset class="m-5">
             <div class="row">
-                <label class="col-2">Votre nom :</label><input type="text" class="col-2" id="nom" required>
+                <label class="col-2">Votre nom :</label><input type="text" class="col-2" id="nom" name="nom" required>
                 <p class="col-2">*</p>
             </div>
             <div class="row">
@@ -62,7 +60,7 @@
                 <p class="col-2">*</p>
             </div>
             <div class="row">
-                <label class="col-2"> Date de naissance :</label><input type="text" class="col-2" id="naissance"
+                <label class="col-2"> Date de naissance :</label><input type="date" class="col-2" id="naissance"
                     name="Date de naissance" placeholder="01/02/1990" required>
                 <p class="col-2">*</p>
             </div>
@@ -109,12 +107,8 @@
                 <button class="btn btn-primary" type="reset" value="Annuler">Annuler</button>
             </div>
 
-        </form>
-    </fieldset>
-
-
-
-
+        </fieldset>
+    </form>
 
     <footer>
         <ul>

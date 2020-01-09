@@ -22,7 +22,7 @@ var PAP = 0;
 if (TOT > 500) {
     REM = TOT * 0.1;
     if ((TOT - REM) < 500) {
-        PORT = 6;
+        PORT = TOT*0.02; //PORT = 6;
     } else {
         PORT = 0;
     }
@@ -41,7 +41,6 @@ else if (TOT >= 100) {
 
 // Calcul Prix a payer
 PAP = TOT + PORT - REM;
-alert("Le prix à payer est de : " + PAP);
+alert("Le prix à payer est de : "+((PAP).toFixed(2))); // .toFixed fixe a 2 chiffer après la virgule
 console.log("TOT = "+TOT);
 console.log("REM = "+REM);
-console.log("Le prix à payer est de : " + PAP);

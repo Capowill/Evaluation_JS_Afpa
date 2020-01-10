@@ -40,16 +40,17 @@
         <h5>Ces champs sont obligatoires *</h5>
     </div>
 
+                                                        <!--J'ai laisser GET car "POST" supprime la ligne nom a l'envoi du formulaire-->
     <form target="_blank" action="http://bienvu.net/script.php" method="GET">
         <fieldset class="m-5">
             <div class="row">
                 <label class="col-2">Votre nom :</label><input type="text" class="col-2" id="nom" name="nom" required>
-                <p class="col-2">*</p>
+                <span id="errorNom" class="col-2">*</span>
             </div>
             <div class="row">
                 <label class="col-2">Votre prénom :</label><input type="text" class="col-2" id="prenom" name="prenom"
                     required>
-                <p class="col-2">*</p>
+                <span id="errorPrenom" class="col-2">*</span>
             </div>
             <div class="row">
                 <label class="col-2"> Sexe :</label>
@@ -57,16 +58,16 @@
                     <input type="radio" name="sex" value="Féminin" required> Féminin
                     <input type="radio" name="sex" value="Masculin" required> Masculin
                 </div>
-                <p class="col-2">*</p>
             </div>
             <div class="row">
-                <label class="col-2"> Date de naissance :</label><input type="date" class="col-2" id="naissance"
+                <label class="col-2"> Date de naissance :</label><input type="text" class="col-2" id="naissance"
                     name="Date de naissance" placeholder="01/02/1990" required>
-                <p class="col-2">*</p>
+                <span id="errordate" class="col-2">*</span>
             </div>
             <div class="row">
                 <label class="col-2"> Code postal :</label><input type="text" class="col-2" id="code"
                     name="Code postale" placeholder="80100" required>
+                <span id="errorPostal" class="col-2">*</span>
             </div>
             <div class="row">
                 <label class="col-2"> Adresse :</label></label><input type="text" class="col-2" id="adresse"
@@ -78,8 +79,9 @@
             <div class="row">
                 <label class="col-2">E-mail :</label><input type="text" class="col-2" id="email" name="mail"
                     placeholder="exemple@mail.fr" required>
-                <p class="col-2">*</p>
+                <span id="errorMail" class="col-2">*</span>
             </div>
+
             <div class="row">
 
                 <label class="col-2"> Sujet :</label>
@@ -90,23 +92,20 @@
                     <option value="Reclamation">Reclamation</option>
                     <option value="Autres">Autres</option>
                 </select>
-                <p class="col-2">*</p>
             </div>
+
             <div class="row">
                 <label class="col-2">Votre question :</label>
                 <textarea name="commentaire" rows="7" cols="40"></textarea>
             </div>
-
             <div class="row">
                 <input type="checkbox" name="Confirmation" value="Confirmation" required>J'accepte le traitement
                 informatique de ce formulaire.
             </div>
-
             <div class="row">
                 <button class="btn btn-primary" type="submit" value="Envoyer" id="submit">Envoyer</button>
                 <button class="btn btn-primary" type="reset" value="Annuler">Annuler</button>
             </div>
-
         </fieldset>
     </form>
 

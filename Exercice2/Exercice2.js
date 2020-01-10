@@ -17,10 +17,11 @@ N = parseInt( prompt("Entrez un nombre :"));
 var N ; //nombre
 var som = 0;
 
+// while = pour (conditions) il faut que ce soit ok pour sortir.
 while (N > 1) {
-    --N;
+    N--;
     console.log(N + "\n"); // \n = retour a la ligne
     som = som + N;
 }
-console.log("Somme = "+som);
-alert("Somme = "+som); 
+console.log("La somme est de= "+som);
+alert("La somme est de = "+som); 

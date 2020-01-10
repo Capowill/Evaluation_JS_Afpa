@@ -1,18 +1,17 @@
-
-var min = 0; //Zero est la fin de saisi donc sera le minimum 
-var max = 0; // Valeur par defaut
-var i = 1; // Valeur par defaut
-var tot = 0; // totale
-var N = parseInt(prompt("Entrez la valeur"));
-while (N != 0) // different de 0
-{
-    tot += N;
+function moyenneMinMax() {
+    let tabVal = []; // totale
+    let i = 0; // Valeur par defaut
+    let tot = 0;
+    tabVal[i] = parseInt(prompt("Entrez la valeur. (0 pour arrêter)"));
     i++;
-    N = parseInt(prompt("Entrez la valeur"));
-    if (max < N)
-        max = N;
-    if (min > N && N != 0)
-        min = N;
+    while (tabVal[i - 1] != 0) // différent de 0
+    {
+        tabVal[i] = parseInt(prompt("Entrez la valeur"));
+        tot += tabVal[i];
+        i++;
+    }
+    tabVal.splice((tabVal.length-1) , 1); // supprimer la derniere case d'un tableau (ici le 0)
+    console.log("La moyenne est de : " + (tot / tabVal.length) + "\nMax : " + Math.max(...tabVal) + "\nMin : " + Math.min(...tabVal));
+    alert("La moyenne est de : " + (tot / tabVal.length) + "\nMax : " + Math.max(...tabVal) + "\nMin : " + Math.min(...tabVal));
 }
-console.log("La moyenne est de : " + tot / i + "\nMax : " + max + "\nMin : " + min);
-alert("La moyenne est de : " + tot / i + "\nMax : " + max + "\nMin : " + min);
+moyenneMinMax();

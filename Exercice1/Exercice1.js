@@ -70,3 +70,4 @@ PAP = TOT + PORT;
 alert("Le prix à payer est de : "+((PAP).toFixed(2))); // .toFixed fixe a 2 chiffer après la virgule
 console.log("TOT = " + TOT);
 console.log("REM = " + REM);
+console.log("PAP = " + ((PAP).toFixed(2)));

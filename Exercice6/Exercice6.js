@@ -14,8 +14,8 @@ function tableau()
 
         if(tab.includes(name))
         {
-            tab.splice(tab.indexOf(name), 1);
-            tab[tab.length] = "";
+            tab.splice(tab.indexOf(name), 1);  
+            tab[tab.length] = ""; // ajoute une case vide a lla fin du tableau
         }
 
         console.log(tab);
